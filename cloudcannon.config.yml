@@ -1,14 +1,40 @@
+# 1. Basic Site Paths
 paths:
-  static: ''
-  uploads: uploads
+  static: .
+  uploads: assets/img
+  data: _data
+
 timezone: Asia/Dhaka
-markdown:
-  engine: commonmark
-  options: {}
+
+# 2. Collections (Organizes your files in the sidebar)
 collections_config:
   pages:
     path: ''
+    output: true
+    filter:
+      strict: false
+      include_extensions:
+        - .html
     icon: wysiwyg
   assets:
     path: assets
     icon: cases
+
+# 3. Editor Settings (The "code" to find editable regions)
+_enabled_editors:
+  - visual
+  - content
+
+# This tells CloudCannon to look for standard HTML tags to edit
+_options:
+  visual:
+    controls:
+      - bold
+      - italic
+      - link
+      - bullist
+
+# 4. Configuration to help the editor load your CSS correctly
+styles:
+  - assets/css/main.css
+  - assets/vendor/bootstrap/css/bootstrap.min.css
