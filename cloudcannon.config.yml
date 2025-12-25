@@ -24,8 +24,8 @@ collections_config:
 _enabled_editors:
   - visual
   - content
+  - source   # 👈 add this so source editor is active
 
-# This tells CloudCannon to look for standard HTML tags to edit
 _options:
   visual:
     controls:
@@ -34,7 +34,7 @@ _options:
       - link
       - bullist
 
-# 4. Configuration to help the editor load your CSS correctly
+# 4. Styles for the editor
 styles:
   - assets/css/main.css
   - assets/vendor/bootstrap/css/bootstrap.min.css
