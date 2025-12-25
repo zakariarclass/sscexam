@@ -38,3 +38,17 @@ _options:
 styles:
   - assets/css/main.css
   - assets/vendor/bootstrap/css/bootstrap.min.css
+
+# 5. Enable Source Editor and Saving
+source_editor:
+  enabled: true
+  paths:
+    - index.html
+    - about.html
+    - contact.html
+    - course-details.html
+    - courses.html
+    - events.html
+    - pricing.html
+    - starter-page.html
+    - trainers.html
